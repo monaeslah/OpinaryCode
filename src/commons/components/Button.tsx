@@ -64,7 +64,12 @@ const Btn: FC<ButtonProps> = ({
         sizeLarge: classes.sizeLarge,
         sizeSmall: classes.sizeSmall,
         disabled: classes.disabled,
-        root: clsx(classes.root, className),
+        root: clsx(
+          classes.root,
+          className,
+          { [classes.sizeLarge]: size === "large" },
+          { [classes.sizeSmall]: size === "small" }
+        ),
       }}
       disabled={disabled}
       onClick={onClick}

@@ -1,6 +1,7 @@
 import React from "react";
 import useStyles from "../commons/Assets/styles/progressBar";
-
+import { Typography } from "@material-ui/core";
+import { useTranslation } from "react-i18next";
 interface ProgressBarProps {
   totalQuestions: number;
   questionsAnswered: number;
@@ -11,6 +12,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 }) => {
   const progressPercentage = (questionsAnswered / totalQuestions) * 100;
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <>
       <div className={classes.bg} />
@@ -34,9 +36,21 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
           }}
         />
         {progressPercentage < 100 ? (
-          <span style={{ padding: "5px" }}>I'm making progress...</span>
+          <span style={{ padding: "5px" }}>
+            <div className={classes.loader}>
+              <div className={classes.loaderElement}></div>
+              <div className={classes.loaderElement}></div>
+              <div className={classes.loaderElement}></div>
+              {/* ... */}
+            </div>
+          </span>
         ) : (
-          <span style={{ padding: "5px" }}>Done!</span>
+          <span style={{ padding: "5px" }}>
+            {" "}
+            <Typography variant="h4" className={classes.headLine}>
+              {t("general.done")}
+            </Typography>
+          </span>
         )}
       </div>
     </>

@@ -117,7 +117,7 @@ export const Theme = createTheme({
       bluepurple:
         'radial-gradient(165.45% 165.45% at 0% -10%, #FFFFFF 0.71%,#DEE1F8  43.27%, #F0E3FF 76.54%, #CA9FFF 100%)',
       yellow:
-        'radial-gradient(165.45% 165.45% at 0% -10%, #7ea6bf 0.71%,#b7d3e9  43.27%,#cfd6ed   76.54%,  #ccedf8 100%)',
+        'radial-gradient(165.45% 165.45% at 0% -10%, #4DA0E6 0.71%,#4cB0E1  43.27%,#acedf8   76.54%,  #ccedf8 100%)',
       green:
         'radial-gradient(96% 96% at 9.7% 17.08%, #3FFF69 0%, #2FFFB4 44.27%, #03C3FF 100%)',
       magenta:

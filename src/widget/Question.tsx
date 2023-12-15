@@ -36,22 +36,24 @@ const PollQuestion: React.FC<PollQuestionProps> = ({
   return (
     <>
       <div>
-        <Typography variant="h4">{question}</Typography>
+        <Typography variant="h4" className={classes.headLine}>
+          {question}
+        </Typography>
         <FormControl component="fieldset">
-          {options.map((option) => (
-            <div key={option.id} className={classes.noteContent}>
-              <Button
-                text={option.text}
-                size="large"
-                onClick={() => handleOptionClick(option.id)}
-              />
-              <Checkbox
-                checked={selectedOptions[id] === option.id}
-                color="primary"
-                inputProps={{ "aria-label": "secondary checkbox" }}
-              />
-            </div>
-          ))}
+          {options.map((option) => {
+            const isSelected = selectedOptions[id] === option.id;
+            return (
+              <div key={option.id} className={classes.noteContent}>
+                <div className={`${isSelected ? classes.selected : ""}`}>
+                  <Button
+                    text={option.text}
+                    size="large"
+                    onClick={() => handleOptionClick(option.id)}
+                  />
+                </div>
+              </div>
+            );
+          })}
         </FormControl>
       </div>
     </>

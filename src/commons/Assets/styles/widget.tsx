@@ -10,9 +10,9 @@ const useStyles = makeStyles((theme: any) => ({
     [theme.breakpoints.down("sm")]: {
       width: "unset",
       marginBottom: theme.spacing(6),
-      marginTop: "3rem",
+      marginTop: "10px",
       marginRight: "unset",
-      padding: theme.spacing(6),
+      padding: theme.spacing(3),
     },
   },
   headLine: { fontWeight: 700, color: theme.palette.surface.mediumSurface },

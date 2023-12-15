@@ -13,8 +13,11 @@ const useStyles = makeStyles((theme?: any) => ({
       width: "inherit",
     },
   },
+
   contained: {
+    // background: "#4DA0E6",
     background: theme.palette.gradient.yellow,
+
     color: theme.palette.text.secondary,
 
     "&:hover": {
@@ -86,10 +89,14 @@ const useStyles = makeStyles((theme?: any) => ({
   sizeLarge: {
     width: "170px",
     height: "58px",
+    backgroun: theme.palette.gradient.yellow,
+    [theme.breakpoints.down("sm")]: { width: "210px" },
   },
   sizeSmall: {
     width: "75px",
     height: "45px",
+    background: theme.palette.gradient.green,
+    [theme.breakpoints.down("sm")]: { width: "270px" },
   },
 
   disabled: {
