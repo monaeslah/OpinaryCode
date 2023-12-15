@@ -39,8 +39,8 @@ export const Theme = createTheme({
       inputLabel: '#626782'
     },
     primary: {
-      main: '#151680',
-      light: '#F8F8FF',
+      main: '#f9a524',
+      light: '#f9a52433',
       accent: '#F7EBFF',
 
       variant: '#7A42BF',
@@ -93,7 +93,7 @@ export const Theme = createTheme({
       paper: '#FFFFFF',
       gray: '#EDEDF1',
       richBlack: '#08141E',
-      contentContainer: '#FAFAFF'
+      contentContainer: '#ffffe7'
     },
 
     onSurface: {
@@ -112,11 +112,12 @@ export const Theme = createTheme({
       primary: '#08141E',
       secondary: '#FFFFFF'
     },
+    // #FAEE5E  43.27%
     gradient: {
       bluepurple:
         'radial-gradient(165.45% 165.45% at 0% -10%, #FFFFFF 0.71%,#DEE1F8  43.27%, #F0E3FF 76.54%, #CA9FFF 100%)',
-      purple:
-        'radial-gradient(165.45% 165.45% at 0% -10%, #BCC1E5 0.71%, #6D78C7 43.27%, #7D86CD 76.54%, #383EAD 100%)',
+      yellow:
+        'radial-gradient(165.45% 165.45% at 0% -10%, #7ea6bf 0.71%,#b7d3e9  43.27%,#cfd6ed   76.54%,  #ccedf8 100%)',
       green:
         'radial-gradient(96% 96% at 9.7% 17.08%, #3FFF69 0%, #2FFFB4 44.27%, #03C3FF 100%)',
       magenta:

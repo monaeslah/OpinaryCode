@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import PollQuestion from "./Question";
 import PollResults from "./Results";
 import jsonData from "./questions.json";
-
+import Button from "../commons/components/Button";
+import useStyles from "../commons/Assets/styles/widget";
+import { useTranslation } from "react-i18next";
 interface PollOption {
   id: number;
   text: string;
@@ -16,6 +18,8 @@ interface PollQuestionData {
 }
 
 const PollWidget: React.FC = () => {
+  const classes = useStyles();
+  const { t } = useTranslation();
   const [questions, setQuestions] = useState<PollQuestionData[]>([]);
 
   const [selectedOptions, setSelectedOptions] = useState<{
@@ -58,19 +62,25 @@ const PollWidget: React.FC = () => {
   const allAnswered = questions.length === Object.keys(selectedOptions).length;
 
   return (
-    <div>
-      {questions.map((questionData) => (
-        <PollQuestion
-          key={questionData.id}
-          questionData={questionData}
-          selectedOptions={selectedOptions}
-          onOptionSelect={handleOptionSelect}
-        />
-      ))}
-      <PollResults questions={questions} />
-      <button onClick={saveToLocalStorage} disabled={!allAnswered}>
-        Save Poll Results
-      </button>
+    <div className={classes.formPaper}>
+      <div className={classes.regulatorySection}>
+        {questions.map((questionData) => (
+          <PollQuestion
+            key={questionData.id}
+            questionData={questionData}
+            selectedOptions={selectedOptions}
+            onOptionSelect={handleOptionSelect}
+          />
+        ))}
+      </div>
+      <div className={classes.regulatorySection}>
+        <PollResults questions={questions} />
+      </div>
+      <Button
+        onClick={saveToLocalStorage}
+        disabled={!allAnswered}
+        text={"Save Poll Results"}
+      />
     </div>
   );
 };

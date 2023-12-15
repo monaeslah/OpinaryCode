@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import {
-  Card,
-  CardContent,
-  Radio,
-  RadioGroup,
-  FormControl,
-  FormControlLabel,
-  Typography,
-} from "@material-ui/core";
-
+import { FormControl, Checkbox, Typography } from "@material-ui/core";
+import Button from "commons/components/Button";
+import useStyles from "../commons/Assets/styles/questions";
+import { useTranslation } from "react-i18next";
 interface PollOption {
   id: number;
   text: string;
@@ -32,34 +26,32 @@ const PollQuestion: React.FC<PollQuestionProps> = ({
   selectedOptions,
   onOptionSelect,
 }) => {
+  const classes = useStyles();
+  const { t } = useTranslation();
   const { id, question, options } = questionData;
 
-  const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedOptionId = parseInt(event.target.value, 10);
-    onOptionSelect(id, selectedOptionId);
-    console.log("questionData", questionData);
+  const handleOptionClick = (optionId: number) => {
+    onOptionSelect(id, optionId);
   };
-
   return (
     <>
       <div>
-        <Typography variant="subtitle1">{question}</Typography>
+        <Typography variant="h4">{question}</Typography>
         <FormControl component="fieldset">
-          <RadioGroup
-            aria-label={`poll-question-${id}`}
-            name={`poll-question-${id}`}
-            value={selectedOptions[id] || ""}
-            onChange={handleOptionChange}
-          >
-            {options.map((option) => (
-              <FormControlLabel
-                key={option.id}
-                value={option.id.toString()}
-                control={<Radio />}
-                label={option.text}
+          {options.map((option) => (
+            <div key={option.id} className={classes.noteContent}>
+              <Button
+                text={option.text}
+                size="large"
+                onClick={() => handleOptionClick(option.id)}
               />
-            ))}
-          </RadioGroup>
+              <Checkbox
+                checked={selectedOptions[id] === option.id}
+                color="primary"
+                inputProps={{ "aria-label": "secondary checkbox" }}
+              />
+            </div>
+          ))}
         </FormControl>
       </div>
     </>
