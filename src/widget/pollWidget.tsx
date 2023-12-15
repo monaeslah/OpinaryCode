@@ -5,6 +5,8 @@ import jsonData from "./questions.json";
 import Button from "../commons/components/Button";
 import useStyles from "../commons/Assets/styles/widget";
 import { useTranslation } from "react-i18next";
+import ProgressBar from "./progressBar";
+
 interface PollOption {
   id: number;
   text: string;
@@ -60,9 +62,15 @@ const PollWidget: React.FC = () => {
     localStorage.setItem("pollData", JSON.stringify(questions));
   };
   const allAnswered = questions.length === Object.keys(selectedOptions).length;
-
+  const questionsAnswered = Object.keys(selectedOptions).length;
+  const totalQuestions = questions.length;
   return (
     <div className={classes.formPaper}>
+      <ProgressBar
+        totalQuestions={totalQuestions}
+        questionsAnswered={questionsAnswered}
+      />
+
       <div className={classes.regulatorySection}>
         {questions.map((questionData) => (
           <PollQuestion
