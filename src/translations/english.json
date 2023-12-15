@@ -1,0 +1,18 @@
+{
+  "general": {
+    "save": "Save",
+    "saved": "Saved!",
+    "cancel": "Cancel",
+    "next": "Next",
+    "notVoted": "Not assigned yet",
+    "delete": "Delete",
+    "select": "Select one option...",
+    "Name": "Name"
+  },
+  "footer": {
+    "copyRight": "Copyright © 2023 Opinary",
+    "privacy": "Privacy Policy",
+    "imprint": "imprint",
+    "terms": "Terms and Conditions"
+  }
+}
