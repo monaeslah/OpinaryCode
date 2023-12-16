@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+This project was developed as part of a coding challenge. It is bootstrapped with Create React App, and customized to use TypeScript and Material-UI 4 for a robust and scalable frontend development experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Time Taken for Completion
+This project was completed in approximately 6 hours. This time estimate includes all aspects of the development process, such as planning, coding, debugging, and testing.
 
-## Available Scripts
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+Prerequisites
+Before running the project, make sure you have Yarn installed on your system. If you do not have Yarn installed, you can follow the instructions at Yarn Installation Guide.
+
+Installing
+To get the development environment running:
+
+Clone the repo to your local machine.
+Navigate to the project directory.
+Run yarn install to install all dependencies.
+Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+yarn start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The page will automatically reload if you make changes to the code.
+You will also see any lint errors in the console.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+yarn build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode, optimizes the build for the best performance, and includes TypeScript type-checking.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
+The build is minified, and the filenames include the hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yarn test
+Currently, there are no unit tests available for this project. We plan to add them in future updates to improve the reliability and maintainability of the code.
 
-### `npm run eject`
+Styling with Material-UI 4
+This project uses Material-UI 4 for styling. Material-UI is a popular React UI framework that offers a comprehensive suite of UI tools to enhance the user interface of your React apps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Refer to the Material-UI 4 Documentation for more details on using this framework.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TypeScript
+TypeScript is used in this project to ensure type safety and improve the development experience with strong typing and object-oriented programming features.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Refer to the TypeScript Documentation for more details on using TypeScript in React applications.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deployment
+For more information on deployment, refer to the section about deployment in the Create React App documentation.
 
-## Learn More
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+git
