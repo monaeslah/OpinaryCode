@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme?: any) => ({
       "66%": { width: "20px" },
       "100%": { width: "130px" },
     },
+    "@keyframes fill-2": {
+      "0%": { width: "0%" },
+      "33%": { width: "50px" },
+      "66%": { width: "25px" },
+      "100%": { width: "101px" },
+    },
     "@keyframes fill-3": {
       "0%": { width: "0%" },
       "33%": { width: "50px" },
@@ -51,27 +57,7 @@ const useStyles = makeStyles((theme?: any) => ({
       background: "#F2F2F2",
     },
   },
-  logoHolder: {
-    background: "#f2f2f2",
-    width: 180,
-    height: 220,
-    position: "relative",
-    margin: "0 auto",
-    paddingTop: 12,
-    paddingBottom: 24,
-    transform: "translateZ(0)",
-  },
-  bg: {
-    position: "absolute",
-    top: 9,
-    left: 8,
-    right: 8,
-    bottom: 8,
-    background:
-      "url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0 no-repeat",
-    backgroundSize: "contain",
-    filter: "drop-shadow(0px 6px 25px rgba(0,0,0,0.5))",
-  },
+
   bar: {
     position: "relative",
     height: 8,

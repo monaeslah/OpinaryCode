@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles((theme?: any) => ({
   background: {
-    height: "100%",
+    height: "90vh",
   },
   container: {
     minHeight: "100%",

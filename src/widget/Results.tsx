@@ -22,7 +22,7 @@ const PollResults: React.FC<PollResultsProps> = ({ questions }) => {
   const classes = useStyles();
   const { t } = useTranslation();
   return (
-    <div>
+    <div className={classes.adjustment}>
       {questions.map((questionData) => (
         <div key={questionData.id} className={classes.pollCard}>
           <CardContent>

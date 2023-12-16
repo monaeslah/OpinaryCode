@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme?: any) => ({
     [theme.breakpoints.down("sm")]: { width: "210px" },
   },
   sizeSmall: {
-    width: "75px",
+    width: "105px",
     height: "45px",
     background: theme.palette.gradient.green,
     [theme.breakpoints.down("sm")]: { width: "270px" },

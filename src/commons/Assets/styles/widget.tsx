@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: any) => ({
       maxWidth: "500px",
     },
   },
-  regulatorySection: {
+  adjustSection: {
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",

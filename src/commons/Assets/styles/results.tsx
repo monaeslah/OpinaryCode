@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: any) => ({
       padding: theme.spacing(6),
     },
   },
+  adjustment: { display: "flex" },
   pollCard: {
     background: "#61BDDC",
     borderRadius: "20px",
