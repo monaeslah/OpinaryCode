@@ -15,10 +15,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   const { t } = useTranslation();
   return (
     <>
-      <div className={classes.bg} />
-      <div className={classes.bar} />
-      <div className={`${classes.bar} ${classes.fill1}`} />
-      <div className={classes.bar} />
       <div
         style={{
           width: "100%",
