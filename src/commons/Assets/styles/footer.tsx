@@ -10,6 +10,17 @@ const useStyles = makeStyles((theme: any) => ({
     color: "rgba(6, 6, 30, 0.60)",
     "& a": {
       textDecoration: "none",
+      color: "rgba(6, 6, 30, 0.60)",
+      margin: "auto",
+      "& p": {
+        color: "rgba(6, 6, 30, 0.60)",
+      },
+    },
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      gap: "10px",
+      marginLeft: " auto",
+      marginRight: " auto",
     },
   },
 
