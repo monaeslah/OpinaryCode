@@ -7,7 +7,7 @@ import PollWidget from './widget/pollWidget'
 import Layout from 'layout/Layout'
 import questionData from './questions.json'
 import questionData2 from './questionTwo.json'
-
+import Counting from 'container/counting'
 const loading = (
   <div className='pt-3 text-center'>
     <div className='sk-spinner sk-spinner-pulse'></div>
@@ -43,6 +43,7 @@ function Home () {
           {widget1Open && (
             <PollWidget questions={questionData} widgetId='widget1' />
           )}
+          <Counting />
         </Layout>
       </React.Suspense>
     </ThemeProvider>
