@@ -1,6 +1,6 @@
 import React from "react";
 import { CardContent, Typography } from "@material-ui/core";
-import useStyles from "../commons/Assets/styles/results";
+import useStyles from "../../commons/Assets/styles/results";
 import { useTranslation } from "react-i18next";
 interface PollOption {
   id: number;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FormControl, Checkbox, Typography } from "@material-ui/core";
 import Button from "commons/components/Button";
-import useStyles from "../commons/Assets/styles/questions";
+import useStyles from "../../commons/Assets/styles/questions";
 import { useTranslation } from "react-i18next";
 interface PollOption {
   id: number;

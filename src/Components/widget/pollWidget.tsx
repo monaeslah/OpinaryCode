@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import PollQuestion from "./Question";
 import PollResults from "./Results";
 import jsonData from "./questions.json";
-import Button from "../commons/components/Button";
-import useStyles from "../commons/Assets/styles/widget";
+import Button from "../../commons/components/Button";
+import useStyles from "../../commons/Assets/styles/widget";
 // import { useTranslation } from "react-i18next";
 import ProgressBar from "./progressBar";
-import Animation from "../commons/components/Animation";
+import Animation from "../../commons/components/Animation";
 
 interface PollOption {
   id: number;
@@ -22,7 +22,7 @@ interface PollQuestionData {
 
 const PollWidget: React.FC = () => {
   const classes = useStyles();
-  // const { t } = useTranslation();
+
   const [questions, setQuestions] = useState<PollQuestionData[]>([]);
 
   const [selectedOptions, setSelectedOptions] = useState<{
