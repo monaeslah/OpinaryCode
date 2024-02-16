@@ -31,25 +31,26 @@ const UserCard: React.FC<UserCardProps> = ({
   };
   return (
     <div>
+      <h3>click the card</h3>
       <Main
-        name="David Borg"
+        name="questions 1"
         title="Flying wings"
         ranking={1}
         popularity={1342}
         likes={4736}
         followed={136}
         color="blue"
-        route="/sec-widget"
+        route="/widget"
       />
       <Main
-        name="Lucy"
+        name="questions 2"
         title="Flying wings"
         ranking={2}
         popularity={7342}
         likes={4736}
         followed={136}
         color="orange"
-        route="/widget"
+        route="/sec-widget"
       />
     </div>
   );
