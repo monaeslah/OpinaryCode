@@ -1,5 +1,5 @@
 import React from "react";
-import useStyles from "../../commons/Assets/styles/progressBar";
+import useStyles from "../Assets/styles/progressBar";
 import { Typography } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 interface ProgressBarProps {

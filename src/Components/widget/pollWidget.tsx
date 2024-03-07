@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PollQuestion from "./Question";
 import PollResults from "./Results";
-// import jsonData from "./questions.json";
+
 import Button from "../../commons/components/Button";
-import useStyles from "../../commons/Assets/styles/widget";
-// import { useTranslation } from "react-i18next";
-import ProgressBar from "./progressBar";
+import "../../commons/Assets/styles/scss/widget.scss";
+
+import ProgressBar from "../../commons/components/progressBar";
 import Animation from "../../commons/components/Animation";
 
 interface PollOption {
@@ -29,8 +29,6 @@ const PollWidget: React.FC<PollWidgetProps> = ({
   initialQuestions,
   widgetId,
 }) => {
-  const classes = useStyles();
-
   const [questions, setQuestions] =
     useState<PollQuestionData[]>(initialQuestions);
 
@@ -68,15 +66,13 @@ const PollWidget: React.FC<PollWidgetProps> = ({
     setSelectedOptions((prev) => ({ ...prev, [questionId]: optionId }));
   };
 
-  // Save results to localStorage
   const saveToLocalStorage = () =>
     localStorage.setItem("pollData", JSON.stringify(questions));
 
-  // Check if all questions have been answered
   const allAnswered = questions.length === Object.keys(selectedOptions).length;
 
   return (
-    <div className={classes.formPaper}>
+    <div className="formPaper">
       <h3>{widgetId}</h3>
       <ProgressBar
         totalQuestions={questions.length}

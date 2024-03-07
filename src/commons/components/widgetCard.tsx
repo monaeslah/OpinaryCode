@@ -1,7 +1,6 @@
 import React from "react";
-import "../commons/Assets/styles/scss/index.scss";
-import PollWidget from "./widget/pollWidget";
-import questionData from "./widget/questions.json";
+import "../Assets/styles/scss/index.scss";
+
 import { useNavigate } from "react-router-dom";
 interface UserCardProps {
   name: string;

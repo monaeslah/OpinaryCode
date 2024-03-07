@@ -1,0 +1,53 @@
+.formPaper {
+  display: flex;
+  flex-direction: column;
+}
+
+.headLine {
+  font-weight: 700;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.adjustSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #fff;
+  border-radius: 8px;
+  border: 0.5px solid;
+}
+
+.noteContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  align-self: stretch;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 71%;
+  margin-bottom: auto;
+}
+
+.submit {
+  color: rgba(6, 6, 30, 0.38);
+}
+
+.disable {
+  background: #ebeaee;
+  color: rgba(6, 6, 30, 0.38);
+}
+
+.infoIcon {
+  display: flex;
+  width: 463px;
+}
